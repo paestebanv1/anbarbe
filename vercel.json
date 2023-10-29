@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "anbarbe/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "anbarbe/wsgi.py"
+      }
+    ]
+}
