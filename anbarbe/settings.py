@@ -25,8 +25,7 @@ SECRET_KEY = "django-insecure-34c130#86wp(7%+9%3x^zyuh19=n-p&%@6wb4f6!fim0w6@l3_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
-
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 # Application definition
 
@@ -40,6 +39,9 @@ INSTALLED_APPS = [
     "rest_framework",
     "news",
 ]
+
+# vercel_app/settings.py
+WSGI_APPLICATION = 'anbarbe.wsgi.app'
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
